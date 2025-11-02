@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Asma-ul-Husna — 99 Names of Allah</title>
+  <meta name="description" content="Simple, clean HTML5 page listing the 99 Names of Allah (Asma-ul-Husna) with Arabic, transliteration, and meanings." />
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <div class="bismillah" lang="ar" dir="rtl">بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيمِ</div>
+      <h1>Asma‑ul‑Husna — 99 Names of Allah</h1>
+      <p>Arabic • Transliteration • English Meaning</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="search" role="search" aria-label="Filter names">
+        <input id="query" type="search" placeholder="Search Arabic, transliteration, or meaning" autocomplete="off" />
+        <div class="count" aria-live="polite"></div>
+      </div>
+      <table id="names">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Arabic</th>
+            <th>Transliteration</th>
+            <th>Meaning</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Rows start -->
+          <tr><td class="num" data-label="#">1</td><td class="arabic" data-label="Arabic">الله</td><td class="trans" data-label="Transliteration">Allah</td><td class="meaning" data-label="Meaning">The Greatest Name, God</td></tr>
+          <tr><td class="num">2</td><td class="arabic">الرحمن</td><td class="trans">Ar‑Rahman</td><td class="meaning">The Most Compassionate</td></tr>
+          <tr><td class="num">3</td><td class="arabic">الرحيم</td><td class="trans">Ar‑Rahim</td><td class="meaning">The Most Merciful</td></tr>
+          <tr><td class="num">4</td><td class="arabic">الملك</td><td class="trans">Al‑Malik</td><td class="meaning">The King, The Sovereign</td></tr>
+          <tr><td class="num">5</td><td class="arabic">القدوس</td><td class="trans">Al‑Quddus</td><td class="meaning">The Most Holy</td></tr>
+          <tr><td class="num">6</td><td class="arabic">السلام</td><td class="trans">As‑Salam</td><td class="meaning">The Source of Peace</td></tr>
+          <tr><td class="num">7</td><td class="arabic">المؤمن</td><td class="trans">Al‑Mu’min</td><td class="meaning">The Giver of Faith</td></tr>
+          <tr><td class="num">8</td><td class="arabic">المهيمن</td><td class="trans">Al‑Muhaymin</td><td class="meaning">The Protector</td></tr>
+          <tr><td class="num">9</td><td class="arabic">العزيز</td><td class="trans">Al‑Aziz</td><td class="meaning">The Almighty</td></tr>
+          <tr><td class="num">10</td><td class="arabic">الجبار</td><td class="trans">Al‑Jabbar</td><td class="meaning">The Compeller</td></tr>
+          <tr><td class="num">11</td><td class="arabic">المتكبر</td><td class="trans">Al‑Mutakabbir</td><td class="meaning">The Supreme</td></tr>
+          <tr><td class="num">12</td><td class="arabic">الخالق</td><td class="trans">Al‑Khaliq</td><td class="meaning">The Creator</td></tr>
+          <tr><td class="num">13</td><td class="arabic">البارئ</td><td class="trans">Al‑Bari’</td><td class="meaning">The Evolver</td></tr>
+          <tr><td class="num">14</td><td class="arabic">المصور</td><td class="trans">Al‑Musawwir</td><td class="meaning">The Fashioner</td></tr>
+          <tr><td class="num">15</td><td class="arabic">الغفار</td><td class="trans">Al‑Ghaffar</td><td class="meaning">The Forgiver</td></tr>
+          <tr><td class="num">16</td><td class="arabic">القهار</td><td class="trans">Al‑Qahhar</td><td class="meaning">The Subduer</td></tr>
+          <tr><td class="num">17</td><td class="arabic">الوهاب</td><td class="trans">Al‑Wahhab</td><td class="meaning">The Bestower</td></tr>
+          <tr><td class="num">18</td><td class="arabic">الرزاق</td><td class="trans">Ar‑Razzaq</td><td class="meaning">The Provider</td></tr>
+          <tr><td class="num">19</td><td class="arabic">الفتاح</td><td class="trans">Al‑Fattah</td><td class="meaning">The Opener, The Judge</td></tr>
+          <tr><td class="num">20</td><td class="arabic">العليم</td><td class="trans">Al‑‘Alim</td><td class="meaning">The All‑Knowing</td></tr>
+          <tr><td class="num">21</td><td class="arabic">القابض</td><td class="trans">Al‑Qabid</td><td class="meaning">The Withholder</td></tr>
+          <tr><td class="num">22</td><td class="arabic">الباسط</td><td class="trans">Al‑Basit</td><td class="meaning">The Expander</td></tr>
+          <tr><td class="num">23</td><td class="arabic">الخافض</td><td class="trans">Al‑Khafid</td><td class="meaning">The Abaser</td></tr>
+          <tr><td class="num">24</td><td class="arabic">الرافع</td><td class="trans">Ar‑Rafi‘</td><td class="meaning">The Exalter</td></tr>
+          <tr><td class="num">25</td><td class="arabic">المعز</td><td class="trans">Al‑Mu‘izz</td><td class="meaning">The Honourer</td></tr>
+          <tr><td class="num">26</td><td class="arabic">المذل</td><td class="trans">Al‑Mudhill</td><td class="meaning">The Dishonourer</td></tr>
+          <tr><td class="num">27</td><td class="arabic">السميع</td><td class="trans">As‑Sami‘</td><td class="meaning">The All‑Hearing</td></tr>
+          <tr><td class="num">28</td><td class="arabic">البصير</td><td class="trans">Al‑Basir</td><td class="meaning">The All‑Seeing</td></tr>
+          <tr><td class="num">29</td><td class="arabic">الحكم</td><td class="trans">Al‑Hakam</td><td class="meaning">The Judge</td></tr>
+          <tr><td class="num">30</td><td class="arabic">العدل</td><td class="trans">Al‑‘Adl</td><td class="meaning">The Just</td></tr>
+          <tr><td class="num">31</td><td class="arabic">اللطيف</td><td class="trans">Al‑Latif</td><td class="meaning">The Subtle One</td></tr>
+          <tr><td class="num">32</td><td class="arabic">الخبير</td><td class="trans">Al‑Khabir</td><td class="meaning">The All‑Aware</td></tr>
+          <tr><td class="num">33</td><td class="arabic">الحليم</td><td class="trans">Al‑Halim</td><td class="meaning">The Forbearing</td></tr>
+          <tr><td class="num">34</td><td class="arabic">العظيم</td><td class="trans">Al‑Azim</td><td class="meaning">The Magnificent</td></tr>
+          <tr><td class="num">35</td><td class="arabic">الغفور</td><td class="trans">Al‑Ghafur</td><td class="meaning">The Great Forgiver</td></tr>
+          <tr><td class="num">36</td><td class="arabic">الشكور</td><td class="trans">Ash‑Shakur</td><td class="meaning">The Most Appreciative</td></tr>
+          <tr><td class="num">37</td><td class="arabic">العلي</td><td class="trans">Al‑‘Ali</td><td class="meaning">The Most High</td></tr>
+          <tr><td class="num">38</td><td class="arabic">الكبير</td><td class="trans">Al‑Kabir</td><td class="meaning">The Most Great</td></tr>
+          <tr><td class="num">39</td><td class="arabic">الحفيظ</td><td class="trans">Al‑Hafiz</td><td class="meaning">The Preserver</td></tr>
+          <tr><td class="num">40</td><td class="arabic">المقيت</td><td class="trans">Al‑Muqit</td><td class="meaning">The Nourisher</td></tr>
+          <tr><td class="num">41</td><td class="arabic">الحسيب</td><td class="trans">Al‑Hasib</td><td class="meaning">The Reckoner</td></tr>
+          <tr><td class="num">42</td><td class="arabic">الجليل</td><td class="trans">Al‑Jalil</td><td class="meaning">The Majestic</td></tr>
+          <tr><td class="num">43</td><td class="arabic">الكريم</td><td class="trans">Al‑Karim</td><td class="meaning">The Generous</td></tr>
+          <tr><td class="num">44</td><td class="arabic">الرقيب</td><td class="trans">Ar‑Raqib</td><td class="meaning">The Watchful</td></tr>
+          <tr><td class="num">45</td><td class="arabic">المجيب</td><td class="trans">Al‑Mujib</td><td class="meaning">The Responsive One</td></tr>
+          <tr><td class="num">46</td><td class="arabic">الواسع</td><td class="trans">Al‑Wasi‘</td><td class="meaning">The All‑Encompassing</td></tr>
+          <tr><td class="num">47</td><td class="arabic">الحكيم</td><td class="trans">Al‑Hakim</td><td class="meaning">The Most Wise</td></tr>
+          <tr><td class="num">48</td><td class="arabic">الودود</td><td class="trans">Al‑Wadud</td><td class="meaning">The Loving One</td></tr>
+          <tr><td class="num">49</td><td class="arabic">المجيد</td><td class="trans">Al‑Majid</td><td class="meaning">The Most Glorious</td></tr>
+          <tr><td class="num">50</td><td class="arabic">الباعث</td><td class="trans">Al‑Ba‘ith</td><td class="meaning">The Resurrector</td></tr>
+          <tr><td class="num">51</td><td class="arabic">الشهيد</td><td class="trans">Ash‑Shahid</td><td class="meaning">The Witness</td></tr>
+          <tr><td class="num">52</td><td class="arabic">الحق</td><td class="trans">Al‑Haqq</td><td class="meaning">The Truth</td></tr>
+          <tr><td class="num">53</td><td class="arabic">الوكيل</td><td class="trans">Al‑Wakil</td><td class="meaning">The Trustee</td></tr>
+          <tr><td class="num">54</td><td class="arabic">القوي</td><td class="trans">Al‑Qawiyy</td><td class="meaning">The All‑Strong</td></tr>
+          <tr><td class="num">55</td><td class="arabic">المتين</td><td class="trans">Al‑Matin</td><td class="meaning">The Firm</td></tr>
+          <tr><td class="num">56</td><td class="arabic">الولي</td><td class="trans">Al‑Wali</td><td class="meaning">The Protecting Friend</td></tr>
+          <tr><td class="num">57</td><td class="arabic">الحميد</td><td class="trans">Al‑Hamid</td><td class="meaning">The Praiseworthy</td></tr>
+          <tr><td class="num">58</td><td class="arabic">المحصي</td><td class="trans">Al‑Muhsi</td><td class="meaning">The Reckoner</td></tr>
+          <tr><td class="num">59</td><td class="arabic">المبدئ</td><td class="trans">Al‑Mubdi’</td><td class="meaning">The Originator</td></tr>
+          <tr><td class="num">60</td><td class="arabic">المعيد</td><td class="trans">Al‑Mu‘id</td><td class="meaning">The Restorer</td></tr>
+          <tr><td class="num">61</td><td class="arabic">المحيي</td><td class="trans">Al‑Muhyi</td><td class="meaning">The Giver of Life</td></tr>
+          <tr><td class="num">62</td><td class="arabic">المميت</td><td class="trans">Al‑Mumit</td><td class="meaning">The Taker of Life</td></tr>
+          <tr><td class="num">63</td><td class="arabic">الحي</td><td class="trans">Al‑Hayy</td><td class="meaning">The Ever‑Living</td></tr>
+          <tr><td class="num">64</td><td class="arabic">القيوم</td><td class="trans">Al‑Qayyum</td><td class="meaning">The Self‑Subsisting</td></tr>
+          <tr><td class="num">65</td><td class="arabic">الواجد</td><td class="trans">Al‑Wajid</td><td class="meaning">The Finder</td></tr>
+          <tr><td class="num">66</td><td class="arabic">الماجد</td><td class="trans">Al‑Majid</td><td class="meaning">The Noble</td></tr>
+          <tr><td class="num">67</td><td class="arabic">الواحد</td><td class="trans">Al‑Wahid</td><td class="meaning">The One</td></tr>
+          <tr><td class="num">68</td><td class="arabic">الصمد</td><td class="trans">As‑Samad</td><td class="meaning">The Eternal Refuge</td></tr>
+          <tr><td class="num">69</td><td class="arabic">القادر</td><td class="trans">Al‑Qadir</td><td class="meaning">The Able</td></tr>
+          <tr><td class="num">70</td><td class="arabic">المقتدر</td><td class="trans">Al‑Muqtadir</td><td class="meaning">The Powerful</td></tr>
+          <tr><td class="num">71</td><td class="arabic">المقدم</td><td class="trans">Al‑Muqaddim</td><td class="meaning">The Expediter</td></tr>
+          <tr><td class="num">72</td><td class="arabic">المؤخر</td><td class="trans">Al‑Mu’akhkhir</td><td class="meaning">The Delayer</td></tr>
+          <tr><td class="num">73</td><td class="arabic">الأول</td><td class="trans">Al‑Awwal</td><td class="meaning">The First</td></tr>
+          <tr><td class="num">74</td><td class="arabic">الآخر</td><td class="trans">Al‑Akhir</td><td class="meaning">The Last</td></tr>
+          <tr><td class="num">75</td><td class="arabic">الظاهر</td><td class="trans">Az‑Zahir</td><td class="meaning">The Manifest</td></tr>
+          <tr><td class="num">76</td><td class="arabic">الباطن</td><td class="trans">Al‑Batin</td><td class="meaning">The Hidden</td></tr>
+          <tr><td class="num">77</td><td class="arabic">الوالي</td><td class="trans">Al‑Wali</td><td class="meaning">The Governor</td></tr>
+          <tr><td class="num">78</td><td class="arabic">المتعالي</td><td class="trans">Al‑Muta‘ali</td><td class="meaning">The Most Exalted</td></tr>
+          <tr><td class="num">79</td><td class="arabic">البر</td><td class="trans">Al‑Barr</td><td class="meaning">The Source of All Goodness</td></tr>
+          <tr><td class="num">80</td><td class="arabic">التواب</td><td class="trans">At‑Tawwab</td><td class="meaning">The Accepter of Repentance</td></tr>
+          <tr><td class="num">81</td><td class="arabic">المنتقم</td><td class="trans">Al‑Muntaqim</td><td class="meaning">The Avenger</td></tr>
+          <tr><td class="num">82</td><td class="arabic">العفو</td><td class="trans">Al‑‘Afuww</td><td class="meaning">The Pardoner</td></tr>
+          <tr><td class="num">83</td><td class="arabic">الرؤوف</td><td class="trans">Ar‑Ra’uf</td><td class="meaning">The Compassionate</td></tr>
+          <tr><td class="num">84</td><td class="arabic">مالك الملك</td><td class="trans">Malik‑ul‑Mulk</td><td class="meaning">The Owner of All Sovereignty</td></tr>
+          <tr><td class="num">85</td><td class="arabic">ذو الجلال والإكرام</td><td class="trans">Dhul‑Jalali wal‑Ikram</td><td class="meaning">Lord of Majesty and Honour</td></tr>
+          <tr><td class="num">86</td><td class="arabic">المقسط</td><td class="trans">Al‑Muqsit</td><td class="meaning">The Just One</td></tr>
+          <tr><td class="num">87</td><td class="arabic">الجامع</td><td class="trans">Al‑Jami‘</td><td class="meaning">The Gatherer</td></tr>
+          <tr><td class="num">88</td><td class="arabic">الغني</td><td class="trans">Al‑Ghani</td><td class="meaning">The Self‑Sufficient</td></tr>
+          <tr><td class="num">89</td><td class="arabic">المغني</td><td class="trans">Al‑Mughni</td><td class="meaning">The Enricher</td></tr>
+          <tr><td class="num">90</td><td class="arabic">المانع</td><td class="trans">Al‑Mani‘</td><td class="meaning">The Preventer</td></tr>
+          <tr><td class="num">91</td><td class="arabic">الضار</td><td class="trans">Ad‑Darr</td><td class="meaning">The Harmer</td></tr>
+          <tr><td class="num">92</td><td class="arabic">النافع</td><td class="trans">An‑Nafi‘</td><td class="meaning">The Benefiter</td></tr>
+          <tr><td class="num">93</td><td class="arabic">النور</td><td class="trans">An‑Nur</td><td class="meaning">The Light</td></tr>
+          <tr><td class="num">94</td><td class="arabic">الهادي</td><td class="trans">Al‑Hadi</td><td class="meaning">The Guide</td></tr>
+          <tr><td class="num">95</td><td class="arabic">البديع</td><td class="trans">Al‑Badi‘</td><td class="meaning">The Incomparable</td></tr>
+          <tr><td class="num">96</td><td class="arabic">الباقي</td><td class="trans">Al‑Baqi</td><td class="meaning">The Everlasting</td></tr>
+          <tr><td class="num">97</td><td class="arabic">الوارث</td><td class="trans">Al‑Warith</td><td class="meaning">The Inheritor</td></tr>
+          <tr><td class="num">98</td><td class="arabic">الرشيد</td><td class="trans">Ar‑Rashid</td><td class="meaning">The Righteous Teacher</td></tr>
+          <tr><td class="num">99</td><td class="arabic">الصبور</td><td class="trans">As‑Sabur</td><td class="meaning">The Patient One</td></tr>
+          <!-- Rows end -->
+        </tbody>
+      </table>
+
+      <footer>
+        <p>Tip: Use the search box to quickly find a name or meaning. This page is fully offline‑friendly — just save it as <code>asma-ul-husna.html</code>.</p>
+      </footer>
+    </div>
+  </main>
+
+  
+  <button id="toTop" title="Back to top" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>

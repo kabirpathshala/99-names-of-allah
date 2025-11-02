@@ -1,0 +1,146 @@
+/* Asma-ul-Husna — respectful Islamic theme */
+
+/* Design tokens */
+:root {
+  --bg: #f2f7fb;
+  --bg-accent: #eaf3fb;
+  --text: #1f2d3d;
+  --muted: #546a7b;
+  --primary: #0e7490;    /* teal */
+  --primary-2: #118e9e;  /* brighter teal */
+  --accent: #c8a75d;     /* soft gold */
+  --card: #ffffff;
+  --border: #d6e3ef;
+  --ring: rgba(17, 142, 158, 0.25);
+  --shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  --arabic-font: 'Scheherazade New', 'Traditional Arabic', 'Amiri', 'Noto Naskh Arabic', serif;
+  --latin-font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+}
+
+/* Background with subtle geometry */
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: var(--latin-font);
+  color: var(--text);
+  background:
+    radial-gradient(1200px 800px at 10% -10%, #e9f5ff 0%, transparent 60%),
+    radial-gradient(1200px 800px at 110% 10%, #eef9f9 0%, transparent 60%),
+    linear-gradient(180deg, var(--bg) 0%, #f7fbff 100%);
+}
+
+/* Decorative top border */
+body::before {
+  content: "";
+  display: block;
+  height: 6px;
+  background-image: repeating-linear-gradient(90deg, var(--primary) 0 24px, var(--accent) 24px 48px, #76c7d1 48px 72px);
+}
+
+header {
+  padding: 24px 16px 8px;
+  text-align: center;
+}
+
+.bismillah {
+  margin: 8px auto 16px;
+  font-family: var(--arabic-font);
+  font-size: clamp(18px, 2vw + 10px, 26px);
+  color: var(--primary);
+  letter-spacing: 0.5px;
+}
+
+header h1 {
+  margin: 8px 0 6px;
+  font-weight: 700;
+  font-size: clamp(22px, 2.2vw + 12px, 34px);
+}
+
+header p { color: var(--muted); margin: 0; }
+
+.wrap {
+  max-width: 1100px;
+  margin: 16px auto 48px;
+  padding: 0 16px;
+}
+
+/* Search */
+.search {
+  margin: 20px auto 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: var(--card);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.search input[type="search"] {
+  flex: 1;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  outline: none;
+  background: #fbfdff;
+}
+.search input[type="search"]:focus { box-shadow: 0 0 0 4px var(--ring); border-color: var(--primary); }
+
+.search .count { color: var(--muted); font-size: 0.92rem; }
+
+.search .hint { color: var(--muted); font-size: 0.9rem; }
+
+/* Table */
+table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--card); border: 1px solid var(--border); box-shadow: var(--shadow); border-radius: 14px; overflow: hidden; }
+
+thead th {
+  position: sticky; top: 0;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef7ff 100%);
+  color: #0f2d44;
+  text-align: left;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+th, td { padding: 12px 14px; border-bottom: 1px solid var(--border); }
+tbody tr:hover { background: #f6fbff; }
+tbody tr:nth-child(even) { background: #fcfeff; }
+tbody tr:nth-child(even):hover { background: #f3f9ff; }
+
+.num { width: 48px; text-align: center; font-variant-numeric: tabular-nums; color: var(--muted); }
+.arabic { font-family: var(--arabic-font); font-size: 1.35rem; direction: rtl; }
+.trans { color: #10394b; font-weight: 600; }
+.meaning { color: var(--muted); }
+
+/* Footer */
+footer { color: var(--muted); text-align: center; margin-top: 14px; }
+footer code { background: #f1f6fb; padding: 2px 6px; border-radius: 6px; border: 1px solid var(--border); }
+
+/* Scroll to top */
+#toTop {
+  position: fixed; right: 20px; bottom: 22px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white; border: none; cursor: pointer;
+  box-shadow: var(--shadow);
+  opacity: 0; pointer-events: none; transform: translateY(10px); transition: all .2s ease-out;
+}
+#toTop.show { opacity: 1; pointer-events: auto; transform: translateY(0); }
+
+/* Responsive */
+@media (max-width: 720px) {
+  th:nth-child(2), td:nth-child(2) { font-size: 1.2rem; }
+  th:nth-child(3), td:nth-child(3) { font-size: 1rem; }
+  .search { flex-direction: column; align-items: stretch; }
+}
+
+/* Print */
+@media print {
+  body::before { display: none; }
+  .search, #toTop { display: none !important; }
+  header, footer { box-shadow: none; }
+}
+
